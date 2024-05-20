@@ -1,0 +1,9 @@
+scikit-learn
+opencv-python
+tensorflow
+matplotlib
+datetime
+streamlit_option_menu
+pywhatkit
+numpy
+streamlit
