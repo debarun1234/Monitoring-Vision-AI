@@ -121,4 +121,4 @@ I welcome contributions! Please fork the repository and submit a pull request wi
 
 ## License
 
-This project is licensed under the GNU License v3 - see the LICENSE.md file for details.
+This project is licensed under the GPL License v3 - see the LICENSE.md file for details.
