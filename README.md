@@ -34,7 +34,7 @@ This project aims to develop a machine learning model to detect and monitor the 
 
 To install the required dependencies, run:
 
-```bash
+```python <- to be performed in Terminal/Command Prompt
 pip install -r requirements.txt
 ```
 ## Usage
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 To start the Streamlit app for real-time machine status monitoring, use:
 
-```bash
+```python
 streamlit run machine_st_test.py
 ```
 ## Script Overview
@@ -54,7 +54,7 @@ The machine_st_test.py script loads the trained model and provides a Streamlit i
 1. Ensure you have Streamlit installed.
 2. Run the script:
 
-```bash
+```python
 streamlit run machine_st_test.py
 ```
 3. Follow the prompts in the Streamlit interface to upload a video or use a video stream and monitor the machine status.
@@ -64,11 +64,58 @@ streamlit run machine_st_test.py
 To train the model, follow these steps:
 
 1. Ensure your dataset is organized in the following structure:
-
+```bash
 ├── train
 │   ├── Moving
 │   └── Not Moving
 └── test
-    ├── class1
-    └── class2
+    ├── Moving
+    └── Not Moving
+```
+2. Update the `train_data_dir` and `test_data_dir` variables in the training script to point to your dataset directories.
+3. Run the model training script:
+4. The trained model will be saved to the specified path.
 
+![Model training Flowchart]("D:\Downloads\modeltraining.jpeg")
+
+## Model Deployment
+### Streamlit App Deployment
+
+1. Load the saved model in the Streamlit app:
+   ```python
+   model = tf.keras.models.load_model('machine_model_5jan10pm.h5')
+   ```
+2. Update the video_path variable to point to your video stream or file:
+   ```python
+   video_path = "rtsp://admin:Admin@123@125.19.34.95:554/cam/realmonitor?channel=1&subtype=0"
+   ```
+3. Run the Streamlit app to monitor the machine status:
+   ```python
+   streamlit run machine_st_test.py
+   ```
+
+![Application deployment sequence]("D:\Downloads\Untitled.svg")
+
+## Evaluation
+
+Evaluate the model's performance using the provided evaluation scripts. Metrics such as accuracy, precision, and recall are used to measure performance.
+
+### Evaluation Metrics
+
+- **Accuracy:** Measure of correct predictions.
+- **Precision:** Measure of the accuracy of the positive predictions.
+- **Recall:** Measure of the ability to detect positive instances.
+
+## Results
+
+The model achieved an accuracy of X% on the test dataset. Below are some sample results:
+
+![Accuracy Plot](path/to/accuracy_plot.png)
+
+## Contributing
+
+I welcome contributions! Please fork the repository and submit a pull request with your changes. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the GNU License v3 - see the LICENSE.md file for details.
