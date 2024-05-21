@@ -76,7 +76,7 @@ To train the model, follow these steps:
 3. Run the model training script:
 4. The trained model will be saved to the specified path.
 
-![Model training Flowchart]("D:\Downloads\modeltraining.jpeg")
+![modeltraining](https://github.com/debarun1234/Monitoring-Vision-AI/assets/17366387/43b48e03-5c84-4d0a-bfc8-6aeb68b7fbc4)
 
 ## Model Deployment
 ### Streamlit App Deployment
@@ -94,7 +94,9 @@ To train the model, follow these steps:
    streamlit run machine_st_test.py
    ```
 
-![Application deployment sequence]("D:\Downloads\Untitled.svg")
+![application_deployment_sequence](https://github.com/debarun1234/Monitoring-Vision-AI/assets/17366387/1b0446be-b346-4126-93b8-4625e9eaaaea)
+
+
 
 ## Evaluation
 
@@ -110,7 +112,8 @@ Evaluate the model's performance using the provided evaluation scripts. Metrics 
 
 The model achieved an accuracy of X% on the test dataset. Below are some sample results:
 
-![Accuracy Plot](path/to/accuracy_plot.png)
+![modelsummary](https://github.com/debarun1234/Monitoring-Vision-AI/assets/17366387/3602e878-5e9f-4be1-91c8-b608e853ded3)
+
 
 ## Contributing
 
